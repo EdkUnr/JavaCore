@@ -1,5 +1,4 @@
-Быстрый доступ к нужным файлам … На новой главной странице показаны самые релевантные файлы и папки.
-        Slytherin.java
+
 public class Slytherin extends HogwartsStudent{
     private String name;
     private int cunning, determination, ambition, resourcefulness, thirstForPower, thePowerOfMagic, distanceOfTransgression;
