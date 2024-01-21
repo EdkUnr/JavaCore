@@ -15,18 +15,19 @@ public class Ravenclaw extends HogwartsStudent{
     }
 
     public String toString() {
-        System.out.println("Имя студента: " + this.getName() + ".\n"
+        String parameters = "Имя студента: " + this.getName() + ".\n"
                 + "Ум: " + this.getSmart() + " очков.\n"
                 + "Мудрость: " + this.getWise() + " очков.\n"
                 + "Остроумие : " + this.getWitty() + " очков.\n"
                 + "Творчество: " + this.getCreative() + " очков.\n"
                 + "Сила магии: " + this.getThePowerOfMagic() + " очков.\n"
-                + "Расстояние трансгрессии: " + this.getDistanceOfTransgression() + " очков.\n");
-        return null;
+                + "Расстояние трансгрессии: " + this.getDistanceOfTransgression() + " очков.\n";
+        System.out.println(parameters);
+        return parameters;
     }
-    public static void compareGriffindorStudents(Ravenclaw[] students, int index1, int index2) {
-        Ravenclaw student1 = students[index1];
-        Ravenclaw student2 = students[index2];
+    public static void compareRavenclawStudents(Ravenclaw students, Ravenclaw student) {
+        Ravenclaw student1 = students;
+        Ravenclaw student2 = student;
 
         int score1 = student1.getSmart() + student1.getWise() + student1.getWitty() + student1.getCreative();
         int score2 = student2.getSmart() + student2.getWise() + student2.getWitty() + student2.getCreative();
