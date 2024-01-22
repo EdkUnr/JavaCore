@@ -1,12 +1,10 @@
 
 public class Griffindor extends HogwartsStudent{
-    private String name;
     private int nobility, honor, bravery, thePowerOfMagic, distanceOfTransgression;
 
 
     public Griffindor(String name, int nobility, int honor, int bravery, int thePowerOfMagic, int distanceOfTransgression) {
         super(name, thePowerOfMagic, distanceOfTransgression);
-        this.name = name;
         this.nobility = nobility;
         this.honor = honor;
         this.bravery = bravery;
@@ -15,18 +13,19 @@ public class Griffindor extends HogwartsStudent{
     }
 
     public String toString(){
-        System.out.println("Имя студента: " + this.getName() + ".\n"
+        String parameters = "Имя студента: " + this.getName() + ".\n"
                 + "Благородство: " + this.getNobility() + " очков.\n"
                 + "Честь: " + this.getHonor() + " очков.\n"
                 + "Храбрость: " + this.getBravery() + " очков.\n"
                 + "Сила магии: " + this.getThePowerOfMagic() + " очков.\n"
-                + "Расстояние трансгрессии: " + this.getDistanceOfTransgression() + " очков.\n");
-        return null;
+                + "Расстояние трансгрессии: " + this.getDistanceOfTransgression() + " очков.\n";
+        System.out.println(parameters);
+        return parameters;
     }
 
-    public static void compareGriffindorStudents(Griffindor[] students, int index1, int index2) {
-        Griffindor student1 = students[index1];
-        Griffindor student2 = students[index2];
+    public static void compareGriffindorStudents(Griffindor students, Griffindor student) {
+        Griffindor student1 = students;
+        Griffindor student2 = student;
 
         int score1 = student1.getNobility() + student1.getHonor() + student1.getBravery();
         int score2 = student2.getNobility() + student2.getHonor() + student2.getBravery();
